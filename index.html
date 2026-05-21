@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Primera Página</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background: #0077ff;
+      color: white;
+      padding: 20px;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      background: #0077ff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #005ecc;
+    }
+
+    #mensaje {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 15px;
+      background: #222;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenido a Mi Página Web</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Hola 👋</h2>
+      <p>
+        Esta es mi primera página web usando HTML, CSS y JavaScript.
+      </p>
+
+      <button onclick="mostrarMensaje()">
+        Haz clic aquí
+      </button>
+
+      <p id="mensaje"></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>Creado por Tavo Escobar 🚀</p>
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").innerText =
+        "¡Aprender programación es genial! 😎";
+    }
+  </script>
+
+</body>
+</html>
